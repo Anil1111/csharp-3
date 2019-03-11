@@ -1,8 +1,8 @@
 ﻿
 public class ContaCorrente
 {
-    string titular;
-    int agencia;
-    int numero;
-    double saldo;
+    public string titular;
+    public int agencia;
+    public int numero;
+    public double saldo;
 }
