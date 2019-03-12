@@ -30,12 +30,10 @@ public class ContaCorrente
         {
             return false;
         }
-        else
-        {
-            this.saldo -= valor;
-            contaDestino.Depositar(valor);
-            return true;
-        }
+        
+        this.saldo -= valor;
+        contaDestino.Depositar(valor);
+        return true;
      
     }
 }
