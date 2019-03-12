@@ -10,13 +10,17 @@ namespace _05_ByteBank
     {
         static void Main(string[] args)
         {
-            Cliente cliente = new Cliente();
-            cliente.nome = "teti";
-            cliente.cpf = "00579195341";
-            cliente.profissao = "Arquiteta";
+            //Cliente cliente = new Cliente();
+            //cliente.nome = "teti";
+            //cliente.cpf = "00579195341";
+            //cliente.profissao = "Arquiteta";
 
             ContaCorrente conta = new ContaCorrente();
-            conta.titular = cliente;
+            conta.titular = new Cliente();
+            conta.titular.nome = "Teti";
+            conta.titular.cpf = "5555555";
+            conta.titular.profissao = "Arquiteta";
+
             conta.saldo = 500;
             conta.agencia = 863;
             conta.numero = 863425;
