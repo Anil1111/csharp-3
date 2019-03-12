@@ -22,8 +22,11 @@ namespace _03_ByteBank
 
             Console.WriteLine(contaDaTeti == contaDoDunga);
 
-            Console.ReadLine();
+            contaDaTeti = contaDoDunga;
 
+            Console.WriteLine(contaDaTeti == contaDoDunga);
+
+            Console.ReadLine();
 
         }
     }
