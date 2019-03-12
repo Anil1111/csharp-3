@@ -20,6 +20,16 @@ namespace _04_ByteBank
             conta.Depositar(1000);
             Console.WriteLine(conta.saldo);
 
+
+            ContaCorrente novaConta = new ContaCorrente();
+
+            novaConta.titular = "Alemão";
+
+            conta.Transferir(200, novaConta);
+
+            Console.WriteLine(conta.saldo);
+            Console.WriteLine(novaConta.saldo);
+
             Console.ReadLine();
         }
     }
