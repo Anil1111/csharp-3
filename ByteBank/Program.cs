@@ -13,23 +13,21 @@ namespace ByteBank
         {
             Bonificacao bonificacao = new Bonificacao();
 
-            Funcionario func = new Funcionario();
+            Funcionario func = new Funcionario("3399222132", 2000);
             func.Nome = "Rafael";
-            func.CPF = "3399222132";
-            func.Salario = 2000.0;
             Console.WriteLine(func.Nome);
             Console.WriteLine(func.GetBonificacao());
             bonificacao.registrar(func);
+            Console.WriteLine(Funcionario.TotalDeFuncionarios);
 
-            Diretor dir = new Diretor();
+            Diretor dir = new Diretor("99988877722", 5000);
             dir.Nome = "Teti";
-            dir.CPF = "99988877722";
-            dir.Salario = 5000.0;
             Console.WriteLine(dir.Nome);
             Console.WriteLine(dir.GetBonificacao());
             bonificacao.registrar(dir);
 
-            Funcionario dunga = new Diretor();
+            //Funcionario dunga = new Diretor();
+            Console.WriteLine(Funcionario.TotalDeFuncionarios);
 
             Console.Write("Total de bonificações: " + bonificacao.getTotalBonificacao());
 
